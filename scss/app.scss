@@ -20,17 +20,17 @@
 }
 
 .global-page {
-
+  max-height: 90vh;
+  background-image: url(../assets/11564004_95701.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
   .center-content {
     position: relative;
-    max-height: 80vh;
-    width: 100%;
-    min-height: 100vh;
-    background-image: url(../assets/11564004_95701.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    max-height: 95vh;
+    height: 90vh;
+    max-width: 100%;
     .menu-sections {
       overflow: auto;
       font-family: 'Source Serif Pro', serif;
@@ -58,9 +58,16 @@
               list-style: square;
               margin-left: 2.5em ;
             }
+
             &::before {
               content: '✓';
               margin-right: 4px;
+            }
+            &.name {
+              &::before {
+                content: none;
+              }
+              font-size: 10px;
             }
           }
         }
@@ -99,7 +106,6 @@
 
 .merry-xmas {
   .final-text {
-
     width: 60%;
     position: absolute;
     bottom: 10%;

@@ -112,12 +112,12 @@ form, input, textarea, select, button {
 body {
   font-family: var(--tipo-principal);
   font-size: 100%;
-  min-height: 100vh;
   color: var(--negro);
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
   font-smooth: always;
+  height: 90vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -239,16 +239,20 @@ body {
   text-align: end;
 }
 
-.global-page .center-content {
-  position: relative;
-  max-height: 80vh;
-  width: 100%;
-  min-height: 100vh;
+.global-page {
+  max-height: 90vh;
   background-image: url(../assets/11564004_95701.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
+}
+
+.global-page .center-content {
+  position: relative;
+  max-height: 95vh;
+  height: 90vh;
+  max-width: 100%;
 }
 
 .global-page .center-content .menu-sections {
@@ -286,6 +290,14 @@ body {
 .global-page .center-content .menu-sections .section.appetizers .section-list::before {
   content: '✓';
   margin-right: 4px;
+}
+
+.global-page .center-content .menu-sections .section.appetizers .section-list.name {
+  font-size: 10px;
+}
+
+.global-page .center-content .menu-sections .section.appetizers .section-list.name::before {
+  content: none;
 }
 
 .global-page .center-content .menu-sections .section.main-courses .section-list {

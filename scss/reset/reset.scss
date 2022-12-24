@@ -66,11 +66,11 @@ form , input , textarea , select , button {
 
 body {
   font-family: var(--tipo-principal);
-  font-size: 100%;
-  min-height: 100vh;
+  font-size: 100%; 
   color: var(--negro);
   hyphens: auto;
   font-smooth: always;
+  height: 90vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
